@@ -2,7 +2,7 @@ import joblib
 from sentence_transformers import SentenceTransformer
 
 model_embedding = SentenceTransformer('all-MiniLM-L6-v2')  
-model_classification = joblib.load("NLP_Log_Classification\log_classifier_svm.joblib")
+model_classification = joblib.load("log_classifier_svm.joblib")   #NLP_Log_Classification\
 
 def classify_with_bert(log_message):
     embeddings = model_embedding.encode([log_message])
