@@ -39,7 +39,7 @@ elif use_sample:
     try:
         df = pd.read_csv(sample_path)
         st.session_state.df = df
-        st.success("✅ Loaded sample.csv successfully!")
+        st.success("✅ Loaded test.csv successfully!")
     except FileNotFoundError:
         st.error("❌ sample.csv not found in the project directory.")
         st.stop()
